@@ -1,0 +1,486 @@
+
+body{
+margin:opx;
+background-color:#f0f3f4;
+	 }
+     .text3{
+     color:white;
+      }
+	 .header-text{
+	 font-family:Segoe UI,Arial,sans-seri;
+	  }
+	.navbar {
+  overflow: hidden;
+  background-color: black;
+  position: fixed; /* Set the navbar to fixed position */
+  top: 0; /* Position the navbar at the top of the page */
+  width: 100%; /* Full width */
+  z-index: 999999999;
+}
+
+.header1{
+ width:60%;
+ height:10%;
+ background-color:white;
+  }
+  .we{
+  width:70%;
+  height:10%;
+  background-color:#fff;
+  
+   }
+   .home{
+   height:30%;
+    }
+/* Links inside the navbar */
+.navbar a {
+  float: right;
+  display: block;
+  color: white;
+  text-align: center;
+  padding: 14px 16px;
+  text-decoration: none;
+}
+
+/* Change background on mouse-over */
+.navbar a:hover {
+  background: #ddd;
+  color: black;
+}
+.navbar a.active {
+  background-color: white;
+  color: black;
+}
+
+
+
+/*Second section*/
+.uf{
+background-color:gray;
+height:300px;
+color:white;
+box-sizing:inherit;
+}
+.Comp{
+font-family:Segoe UI,Arial,sans-seri;
+font-height:400px;
+text-align:center;
+}
+.text-font{
+font-family:Segoe UI,Arial,sans-seri;
+font-size:large;
+text-align:justify;
+}
+
+
+/*SLIDE SHOW GALLERY*/
+/* Position the image container (needed to position the left and right arrows) */
+.Product{
+height:300px;
+z-index:0;
+color:black;
+font-family:Segoe UI,Arial,sans-seri;
+ }
+* {
+  box-sizing: border-box;
+}
+
+/* Position the image container (needed to position the left and right arrows) */
+.container {
+  position: relative;
+}
+
+/* Hide the images by default */
+.mySlides {
+  display: none;
+}
+
+/* Add a pointer when hovering over the thumbnail images */
+.cursor {
+  cursor: pointer;
+}
+
+/* Next & previous buttons */
+.prev,
+.next {
+  cursor: pointer;
+  position: absolute;
+  top: 40%;
+  width: auto;
+  padding: 16px;
+  margin-top: -50px;
+  background-color:#262626;
+  color: white;
+  font-weight: bold;
+  font-size: 20px;
+  border-radius: 0 3px 3px 0;
+  user-select: none;
+  -webkit-user-select: none;
+}
+
+.prev{
+left:0;
+border-radius:  3px 0 0 3px;
+ }
+/* Position the "next button" to the right */
+.next {
+  right: 0;
+  border-radius: 3px 0 0 3px;
+}
+
+/* On hover, add a black background color with a little bit see-through */
+.prev:hover,
+.next:hover {
+  background-color: rgba(0, 0, 0, 0.8);
+}
+
+/* Number text (1/3 etc) */
+.numbertext {
+  color: #f2f2f2;
+  font-size: 12px;
+  padding: 8px 12px;
+  position: absolute;
+  top: 0;
+}
+
+/* Container for image text */
+.caption-container {
+  text-align: center;
+  background-color: #222;
+  padding: 2px 16px;
+  color: white;
+}
+
+.row:after {
+  content: "";
+  display: table;
+  clear: both;
+}
+
+/* Six columns side by side */
+.column {
+  float: left;
+  width: 16.66%;
+}
+
+/* Add a transparency effect for thumnbail images */
+.demo {
+  opacity: 0.6;
+}
+
+.active,
+.demo:hover {
+  opacity: 1;
+}
+
+.contact{
+height:800px;
+background-color:;
+ }
+ /*PRODUCT PORTFOLIO*/
+ .Product portfolio{
+ height:1000px;
+ }
+ .main {
+  max-width: 1000px;
+  margin: auto;
+}
+
+h1 {
+  font-size: 50px;
+  word-break: break-all;
+}
+
+.row1 {
+  margin: 8px -16px;
+}
+
+/* Add padding BETWEEN each column (if you want) */
+.row1,.row1 > .column1 {
+  padding: 8px;
+}
+
+/* Create three equal columns that floats next to each other */
+.column1 {
+  float: left;
+  width: 33.33%;
+  display: none; /* Hide columns by default */
+}
+
+/* Clear floats after rows */ 
+.row1:after {
+  content: "";
+  display: table;
+  clear: both;
+}
+
+/* Content */
+.content1 {
+  background-color: white;
+  padding: 10px;
+}
+
+/* The "show" class is added to the filtered elements */
+.show {
+  display: block;
+}
+
+/* Style the buttons */
+.btn {
+  border: none;
+  outline: none;
+  padding: 12px 16px;
+  background-color: white;
+  cursor: pointer;
+}
+
+/* Add a grey background color on mouse-over */
+.btn:hover {
+  background-color: #ddd;
+}
+
+/* Add a dark background color to the active button */
+.btn.active1 {
+  background-color: #666;
+   color: white;
+}
+ 
+.Contact{
+
+ }
+ /*CONTACT FORM*/
+ /* Style inputs with type="text", select elements and textareas */
+input[type=text], select, textarea {
+  width: 100%; /* Full width */
+  padding: 12px; /* Some padding */  
+  border: 1px solid #ccc; /* Gray border */
+  border-radius: 16px; /* Rounded borders */
+  box-sizing: border-box; /* Make sure that padding and width stays in place */
+  margin-top: 6px; /* Add a top margin */
+  margin-bottom: 16px; /* Bottom margin */
+  resize: vertical /* Allow the user to vertically resize the textarea (not horizontally) */
+}
+
+/* Style the submit button with a specific background color etc */
+input[type=submit] {
+  background-color:#008080;
+  color: white;
+  padding: 12px 20px;
+  border: none;
+  border-radius: 16px;
+  cursor: pointer;
+}
+
+/* When moving the mouse over the submit button, add a darker green color */
+input[type=submit]:hover {
+  background-color: #008080;
+}
+
+/* Add a background color and some padding around the form */
+.container3 {
+  border-radius: 16px;
+  background-color: #f2f2f2;
+  padding: 20px;
+}
+.Form{
+font-family:Signika,sans-serif;
+color:;
+ }
+ 
+.open-button {
+  background-color:#008080;
+  color: white;
+  padding: 16px 20px;
+  border: none;
+  cursor: pointer;
+  opacity: 0.8;
+  position: fixed;
+  bottom: 23px;
+  right: 28px;
+  width: 80px;
+  border-radius:50%;
+}
+
+/* The popup chat - hidden by default */
+.chat-popup {
+  display: none;
+  position: fixed;
+  bottom: 0;
+  right: 15px;
+  border: 3px solid #f1f1f1;
+  z-index: 9;
+  border-radius:16px;
+}
+
+/* Add styles to the form container */
+.form-container {
+  max-width: 300px;
+  padding: 10px;
+  background-color: white;
+  border-radius:16px;
+  
+}
+
+/* Full-width textarea */
+.form-container textarea {
+  width: 100%;
+  padding: 15px;
+  margin: 5px 0 22px 0;
+  border: none;
+  background: #f1f1f1;
+  resize: none;
+  min-height: 200px;
+}
+
+/* When the textarea gets focus, do something */
+.form-container textarea:focus {
+  background-color: #ddd;
+  outline: none;
+}
+
+/* Set a style for the submit/send button */
+.form-container .btn {
+  background-color: #008080;
+  color: white;
+  padding: 10px 20px;
+  border: none;
+  cursor: pointer;
+  width: 50%;
+  margin-bottom:10px;
+  opacity: 0.8;
+  border-radius:50%;
+  float:left;
+  
+}
+
+/* Add a red background color to the cancel button */
+.form-container .cancel {
+  background-color:#FF4D98;
+  border-radius:50%;
+}
+
+/* Add some hover effects to buttons */
+.form-container .btn:hover, .open-button:hover {
+  opacity: 1;
+}
+footer{
+background-color:#262626;
+font-family:arial,gothic,segoe ui;
+color:white;
+margin-top:10px;
+padding-top:10px;
+padding-bottom:10px;
+height:400px;
+ }
+ .pet{
+ text-align:center;
+ font-family:segoe ui;
+ color:white;
+  }
+p{
+   box-sizing:content-box;
+ padding: 0 12px 0 12px;
+
+ }  
+ 
+
+.mer{
+     line-height:25px;
+     display:inline;
+      }
+#jer{
+  width:50%;  
+  float:left;  
+  display:flex;
+  flex-direction: column;  
+      } 
+  #jer2{
+  float:right;
+  width:40%;
+    display:flex;
+  flex-direction: column;
+  }
+  #jer p{
+  margin:0;
+  line-height:25px;
+  text-align:left;
+   }
+  #jer2 p{
+  margin:0;
+  line-height:25px;
+  text-align:left; 
+  }
+  
+  footer h5{
+  clear:both; 
+  text-align:center;
+  padding-top: 20px;
+  font-size:25px;
+  }
+
+#mes1{
+     
+ }
+ nav h1{
+ margin:0;
+ font-size:42px;
+ color:white;
+ float:left;
+ padding:0 5px 0 5px;
+ 
+  }
+ #medc{
+  }
+  .fa {
+  padding: 20px;
+  font-size: 30px;
+  width: 40px;
+  text-align: center;
+  text-decoration: none;
+  margin: 5px 2px;
+  border-radius: 50%;
+  clear:both;
+}
+
+.fa:hover {
+    opacity: 0.7;
+}
+.fa-pinterest {
+  background: #cb2027;
+  color: white;
+}
+
+
+.fa-facebook {
+  background: #3B5998;
+  color: white;
+}
+
+.fa-twitter {
+  background: #55ACEE;
+  color: white;
+}
+
+.fa-google {
+  background: #dd4b39;
+  color: white;
+}
+
+.fa-linkedin {
+  background: #007bb5;
+  color: white;
+}
+.Ab{
+font-family:Segoe UI,Arial,sans-seri;
+text-align:center;
+ }
+ .Ab2{
+ font-size:large;
+ font-family:Segoe UI,Arial,sans-seri;
+ text-align:justify;
+ background-color:gray;
+ color:white;
+  }
+
+
+ 

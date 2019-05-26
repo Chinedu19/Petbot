@@ -1,0 +1,409 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+   <meta charset="utf-8">
+     <title> PetBot</title> 
+	 <link rel="stylesheet" type="text/css" href="style3.css">
+	 <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+	 <meta name="viewport" content="width=device-width, initial-scale=1">
+	  
+  </head>
+  <body>
+  <nav class="navbar">
+  <h1><i>PetBot</i></h1>
+   <a href="Contact.html"> Contact Us</a>
+  <a href="About.html">About Us</a>
+  <a class="active" href="Product.html">Product</a>
+  <a href="Index3.html">Home</a>
+  </nav>
+  <section id="Product">
+  
+   <center>
+   <h1><i>Product Gallery</i></h1>
+<div class="container">
+  <div class="mySlides">
+    <div class="numbertext">1 / 6</div>
+    <img src="pic25.jpg" style="height:30%" style="width:80%">
+  </div>
+
+  <div class="mySlides">
+    <div class="numbertext">2 / 6</div>
+    <img src="pic11.jpg" style="height:30%" style="width:80%">
+  </div>
+
+  <div class="mySlides">
+    <div class="numbertext">3 / 6</div>
+    <img src="pic16.jpg" style="height:30%" style="width:80%">
+  </div>
+    
+  <div class="mySlides">
+    <div class="numbertext">4 / 6</div>
+    <img src="pic19.jpg" style="height:30%" style="width:80%">
+  </div>
+
+  <div class="mySlides">
+    <div class="numbertext">5 / 6</div>
+    <img src="pic15.jpg" style="height:30%" style="width:80%">
+  </div>
+    
+  <div class="mySlides">
+    <div class="numbertext">6 / 6</div>
+    <img src="pic8.jpg" style="height:30%"s style="width:80%">
+  </div>
+    
+  <a class="prev" onclick="plusSlides(-1)">&#10094;</a>
+  <a class="next" onclick="plusSlides(1)">&#10095;</a>
+
+  <div class="caption-container">
+    <p id="caption"></p>
+  </div>
+
+  <div class="row">
+    <div class="column">
+      <img class="demo cursor" src="pic25.jpg" style="width:80%" onclick="currentSlide(1)" alt="">
+    </div>
+    <div class="column">
+      <img class="demo cursor" src="pic11.jpg" style="width:80%" onclick="currentSlide(2)" alt="">
+    </div>
+    <div class="column">
+      <img class="demo cursor" src="pic16.jpg" style="width:80%" onclick="currentSlide(3)" alt="">
+    </div>
+    <div class="column">
+      <img class="demo cursor" src="pic19.jpg" style="width:80%" onclick="currentSlide(4)" alt="">
+    </div>
+    <div class="column">
+      <img class="demo cursor" src="pic15.jpg" style="width:80%" onclick="currentSlide(5)" alt="">
+    </div>    
+    <div class="column">
+      <img class="demo cursor" src="pic8.jpg" style="width:80%" onclick="currentSlide(6)" alt="">
+    </div>
+  </div>
+</div> 
+ </center>
+   </section>
+   <aside>
+<button class="open-button" onclick="openForm()">Chat</button>
+
+<div class="chat-popup" id="myForm">
+  <form action="/action_page.php" class="form-container">
+    <h1><i>Feedback</i></h1>
+
+    <label for="msg"><b>Message</b></label>
+    <textarea placeholder="Type message.." name="msg" required></textarea>
+
+    <button type="submit" class="btn">Send</button>
+    <button type="button" class="btn cancel" onclick="closeForm()">Cancel</button>
+  </form>
+</div>
+</aside>
+   
+   <section id="Product portfolio">
+   <!-- MAIN (Center website) -->
+<div class="main">
+ <center>
+<h1><i>Product List</i></h1>
+</center>
+
+
+<h2>Click any buttons to see the  Product list</h2>
+
+<div id="myBtnContainer">
+  <button class="btn active1" onclick="filterSelection('all')"> Show all</button>
+  <button class="btn" onclick="filterSelection('pet')"> PET Bottles</button>
+  <button class="btn" onclick="filterSelection('pp')"> PP Bottles</button>
+  <button class="btn" onclick="filterSelection('pc')"> PC Bottles</button>
+  <button class="btn" onclick="filterSelection('bot')">Bottles</button>
+  <button class="btn" onclick="filterSelection('jars')"> Jars</button>
+</div>
+
+<!-- Portfolio Gallery Grid -->
+<div class="row1">
+  <div class="column1 pet">
+    <div class="content">
+      <img src="pic9.jpg" alt="pet" style="width:100%">
+      <h4></h4>
+      <p></p>
+    </div>
+  </div>
+  <div class="column1 pet">
+    <div class="content">
+    <img src="pic7.jpg" alt="pet" style="width:100%">
+      <h4></h4>
+      <p></p>
+    </div>
+  </div>
+  <div class="column1 pet">
+    <div class="content">
+    <img src="pic10.jpg" alt="pet" style="width:100%">
+      <h4></h4>
+      <p></p>
+    </div>
+  </div>
+  
+  <div class="column1 pp">
+    <div class="content">
+      <img src="pic17.jpg" alt="pp" style="width:100%">
+      <h4></h4>
+      <p></p>
+    </div>
+  </div>
+  <div class="column1 pp">
+    <div class="content">
+    <img src="pic27.jpg" alt="pp" style="width:100%">
+      <h4></h4>
+      <p></p>
+    </div>
+  </div>
+  <div class="column1 pp">
+    <div class="content">
+    <img src="pic28.jpg" alt="pp" style="width:100%">
+      <h4></h4>
+      <p></p>
+    </div>
+  </div>
+
+  <div class="column1 pc">
+    <div class="content">
+      <img src="pic47.jpg" alt="pc" style="width:100%">
+      <h4></h4>
+      <p></p>
+    </div>
+  </div>
+  <div class="column1 pc">
+    <div class="content">
+    <img src="pic56.jpg" alt="pc" style="width:100%">
+      <h4></h4>
+      <p></p>
+    </div>
+  </div>
+  <div class="column1 pc">
+    <div class="content">
+    <img src="pic14.jpg" alt="pc" style="width:100%">
+      <h4></h4>
+      <p></p>
+    </div>
+  </div>
+   <div class="column1 pc">
+    <div class="content">
+      <img src="pic47.jpg" alt="pc" style="width:100%">
+      <h4></h4>
+      <p></p>
+    </div>
+  </div>
+  
+ <div class="column1 bot">
+    <div class="content">
+      <img src="pic32.jpg" alt="pc" style="width:100%">
+      <h4></h4>
+      <p></p>
+    </div>
+  </div>
+  <div class="column1 bot">
+    <div class="content">
+    <img src="pic24.jpg" alt="pc" style="width:100%">
+      <h4></h4>
+      <p></p>
+    </div>
+  </div>
+  <div class="column1 bot">
+    <div class="content">
+    <img src="pic10.jpg" alt="pc" style="width:100%">
+      <h4></h4>
+      <p></p>
+    </div>
+  </div>
+  <div class="column1 bot">
+    <div class="content">
+    <img src="pic25.jpg" alt="pc" style="width:100%">
+      <h4></h4>
+      <p></p>
+    </div>
+  </div>
+  <div class="column1 bot">
+    <div class="content">
+    <img src="pic30.jpg" alt="pc" style="width:100%">
+      <h4></h4>
+      <p></p>
+    </div>
+  </div>
+  <div class="column1 bot">
+    <div class="content">
+    <img src="pic42.jpg" alt="pc" style="width:100%">
+      <h4></h4>
+      <p></p>
+    </div>
+  </div>
+  
+  <div class="column1 jars">
+    <div class="content">
+      <img src="pic17.jpg" alt="pc" style="width:100%">
+      <h4></h4>
+      <p></p>
+    </div>
+  </div>
+  <div class="column1 jars">
+    <div class="content">
+    <img src="pic20.jpg" alt="pc" style="width:100%">
+      <h4></h4>
+      <p></p>
+    </div>
+  </div>
+  <div class="column1 jars">
+    <div class="content">
+    <img src="pic14.jpg" alt="pc" style="width:100%">
+      <h4></h4>
+      <p></p>
+    </div>
+  </div>
+  <div class="column1 jars">
+    <div class="content">
+    <img src="pic21.jpg" alt="pc" style="width:100%">
+      <h4></h4>
+      <p></p>
+    </div>
+  </div>
+  <div class="column1 jars">
+    <div class="content">
+    <img src="pic21.jpg" alt="pc" style="width:100%">
+      <h4></h4>
+      <p></p>
+    </div>
+  </div>
+  <div class="column1 jars">
+    <div class="content">
+    <img src="pic15.jpg" alt="pc" style="width:100%">
+      <h4></h4>
+      <p></p>
+    </div>
+  </div>
+<!-- END GRID -->
+</div>
+
+<!-- END MAIN -->
+</div>
+</section> 
+  </body>
+ <footer>
+	<h1 class="pet"><i>PetBot</i></h1>
+	<div id="jer">
+	<p class="mer" >
+	24,Aminu Kano Crescent,</p>
+	<p>
+	Wuse ll, Abuja.</p>
+	<p>
+	Email: petbotcompany@gmail.com</p>
+	<p>
+	<u>+2348104160507</u>.
+	</p>
+	</div>
+	<div id="jer2">
+	<p class="mer">
+	Contact using our email
+	</p>
+	<p class="mer">
+	Or
+	</p>
+	<p class="mer">
+	Go on Social Media
+	</p>
+	<p id="mes1">
+	follow us on
+	</p>
+	<p id="medc"> 
+	<a href="#" class="fa fa-facebook"></a>
+<a href="#" class="fa fa-twitter"></a>
+<a href="#" class="fa fa-google"></a>
+<a href="#" class="fa fa-linkedin"></a>
+<a href="#" class="fa fa-pinterest"></a>
+	</p>
+	</div>
+	<h5><i>PetBot Company <br>&copy 2018</i> </h5>
+	</footer>
+  <script>
+ var slideIndex = 1;
+showSlides(slideIndex);
+
+function plusSlides(n) {
+  showSlides(slideIndex += n);
+}
+
+function currentSlide(n) {
+  showSlides(slideIndex = n);
+}
+
+function showSlides(n) {
+  var i;
+  var slides = document.getElementsByClassName("mySlides");
+  var dots = document.getElementsByClassName("demo");
+  var captionText = document.getElementById("caption");
+  if (n > slides.length) {slideIndex = 1}
+  if (n < 1) {slideIndex = slides.length}
+  for (i = 0; i < slides.length; i++) {
+      slides[i].style.display = "none";
+  }
+  for (i = 0; i < dots.length; i++) {
+      dots[i].className = dots[i].className.replace(" active", "");
+  }
+  slides[slideIndex-1].style.display = "block";
+  dots[slideIndex-1].className += " active";
+  captionText.innerHTML = dots[slideIndex-1].alt;
+}
+ </script>
+ 
+ <script>
+filterSelection("all")
+function filterSelection(c) {
+  var x, i;
+  x = document.getElementsByClassName("column1");
+  if (c == "all") c = "";
+  for (i = 0; i < x.length; i++) {
+    w3RemoveClass(x[i], "show");
+    if (x[i].className.indexOf(c) > -1) w3AddClass(x[i], "show");
+  }
+}
+
+function w3AddClass(element, name) {
+  var i, arr1, arr2;
+  arr1 = element.className.split(" ");
+  arr2 = name.split(" ");
+  for (i = 0; i < arr2.length; i++) {
+    if (arr1.indexOf(arr2[i]) == -1) {element.className += " " + arr2[i];}
+  }
+}
+
+function w3RemoveClass(element, name) {
+  var i, arr1, arr2;
+  arr1 = element.className.split(" ");
+  arr2 = name.split(" ");
+  for (i = 0; i < arr2.length; i++) {
+    while (arr1.indexOf(arr2[i]) > -1) {
+      arr1.splice(arr1.indexOf(arr2[i]), 1);     
+    }
+  }
+  element.className = arr1.join(" ");
+}
+
+
+// Add active class to the current button (highlight it)
+var btnContainer = document.getElementById("myBtnContainer");
+var btns = btnContainer.getElementsByClassName("btn");
+for (var i = 0; i < btns.length; i++) {
+  btns[i].addEventListener("click", function(){
+    var current = document.getElementsByClassName("active");
+    current[0].className = current[0].className.replace(" active1", "");
+    this.className += " active1";
+  });
+}
+</script>
+
+  <script>
+function openForm() {
+  document.getElementById("myForm").style.display = "block";
+}
+
+function closeForm() {
+  document.getElementById("myForm").style.display = "none";
+}
+</script>
+
+</html>

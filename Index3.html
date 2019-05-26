@@ -1,0 +1,121 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+   <meta charset="utf-8">
+     <title> PetBot</title> 
+	 <link rel="stylesheet" type="text/css" href="style3.css">
+	  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+	  <meta name="viewport" content="width=device-width, initial-scale=1">
+  </head>
+  <body>
+  <nav class="navbar">
+  <h1><i>PetBot</i></h1>
+  <a href="Contact.html"> Contact Us</a>
+  <a href="About.html">About Us</a>
+  <a href="Product.html">Product</a>
+  <a class="active" href="Index3.html">Home</a>
+ </nav> 
+  <section class="home">
+  <center>
+  <h1 class="header-text"><i>Welcome to PetBot</i></h1>
+  <img class="mySlides1" src="pic200.jpg" style="width:75%">
+  <img class="mySlides1" src="pic400.jpg" style="width:75%">
+  <img class="mySlides1" src="pic100.jpg" style="width:75%">
+  <img class="mySlides1" src="pic500.jpg" style="width:75%">
+  <img class="mySlides1" src="pic300.jpg" style="width:75%">
+  </center>
+</section>
+<section class="uf">
+  <h2 class="Comp">PetBot</h2>
+  <p class="text-font">
+  Petbot Company is an eminent business entity engaged in the manufacturing,
+supplying and exporting a wide range of PET (Polyetheylene Terephthalate), 
+PP (Polyphrophene) and PC (Polycarbonate) bottles.
+
+As advanced a company we are , we have a manufacturing plant where all of
+our bottles are made. Since our bottles are not branded and are for the 
+use of other businesses and companies, Therefore they can be customized.
+Also, machines of Petbot company are used by other companies to produce
+and manufacture their products themselves.
+   </p>
+   </section>
+   <aside>
+  <button class="open-button" onclick="openForm()">Chart</button>
+
+<div class="chat-popup" id="myForm">
+  <form action="/action_page.php" class="form-container">
+    <h1><i>Feedback</i></h1>
+
+    <label for="msg"><b>Message</b></label>
+    <textarea placeholder="Type message.." name="msg" required></textarea>
+
+    <button type="submit" class="btn">Send</button>
+    <button type="button" class="btn cancel" onclick="closeForm()">Cancel</button>
+  </form>
+</div>
+</aside>
+  </body>
+  
+	<footer>
+	<h1 class="pet"><i>PetBot</i></h1>
+	<div id="jer">
+	<p class="mer" >
+	24,Aminu Kano Crescent,</p>
+	<p>
+	Wuse ll, Abuja.</p>
+	<p>
+	Email: petbotcompany@gmail.com</p>
+	<p>
+	<u>+2348104160507</u>.
+	</p>
+	</div>
+	<div id="jer2">
+	<p class="mer">
+	Contact using our email
+	</p>
+	<p class="mer">
+	Or
+	</p>
+	<p class="mer">
+	Go on Social Media
+	</p>
+	<p id="mes1">
+	follow us on
+	</p>
+	<p id="medc"> 
+	<a href="#" class="fa fa-facebook"></a>
+<a href="#" class="fa fa-twitter"></a>
+<a href="#" class="fa fa-google"></a>
+<a href="#" class="fa fa-linkedin"></a>
+<a href="#" class="fa fa-pinterest"></a>
+	</p>
+	</div>
+	<h5><i>PetBot Company <br>&copy 2018</i> </h5>
+	</footer>
+  <script>
+ // Automatic Slideshow - change image every 3 seconds
+var myIndex = 0;
+carousel();
+
+function carousel() {
+  var i;
+  var x = document.getElementsByClassName("mySlides1");
+  for (i = 0; i < x.length; i++) {
+     x[i].style.display = "none";
+  }
+  myIndex++;
+  if (myIndex > x.length) {myIndex = 1}
+  x[myIndex-1].style.display = "block";
+  setTimeout(carousel, 3000);
+}
+ </script> 
+  <script>
+function openForm() {
+  document.getElementById("myForm").style.display = "block";
+}
+
+function closeForm() {
+  document.getElementById("myForm").style.display = "none";
+}
+</script>
+</html>

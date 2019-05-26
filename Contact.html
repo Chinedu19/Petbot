@@ -1,0 +1,149 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+   <meta charset="utf-8">
+     <title> PetBot</title> 
+	 <link rel="stylesheet" type="text/css" href="style3.css">
+	 <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+	 <meta name="viewport" content="width=device-width, initial-scale=1">
+	  
+  </head>
+  <body>
+  <nav class="navbar">
+ <h1><i>PetBot</i></h1>
+   <a class="active" href="Contact.html"> Contact Us</a>
+  <a href="About.html">About Us</a>
+  <a href="Product.html">Product</a>
+  <a  href="Index3.html">Home</a>
+  </nav>
+   <section class="Contact">
+   <center>
+   <h1 class="Form"><i>Contact Us</i></h1>
+   <h3 class="Form"><i> Please input your correct details</i></h3>
+   </center>
+   <div class="container3">
+  <form action="action_page.php">
+
+    <label for="email">Companies Email</label>
+    <input type="text" id="email" name="Companies Email" placeholder="Companies Email..">
+
+    <label for="lname">Companies Name</label>
+    <input type="text" id="Comp-name" name="Companies Name" placeholder="Companies Name..">
+	<label for="address">Address</label>
+    <input type="text" id="address" name="Address" placeholder="Address ">
+
+
+    <label for="country">Country</label>
+    <select id="country" name="country">
+      <option value="australia">Australia</option>
+      <option value="canada">Canada</option>
+	   <option value="england">England</option>
+	   <option value="iceland">Iceland</option>
+	    <option value="india">India</option>
+	  <option value="nigeria">Nigeria</option>
+	  <option value="south africa">South Africa</option>
+      <option value="usa">USA</option>
+    </select>
+	<label for="bottles typle">Bottle Type</label>
+    <select id="bottles type" name="bottles type">
+      <option value="pet">PET Bottles</option>
+      <option value="pp">PP Bottles</option>
+      <option value="pc">PC Bottles</option>
+	  <option value="pc">PET & PP Bottles</option>
+	  <option value="pc">PET & PC Bottles</option>
+	  <option value="pc">PP & PET Bottles</option>
+	  <option value="pc">PP & PC Bottles</option>
+	  <option value="pc">PC & PET Bottles</option>
+	  <option value="pc">PC & PP Bottles</option>
+    </select>
+	
+	<label for="Units">Number Of Units</label>
+    <select id="Units" name="Units">
+      <option value="pet">50 Units</option>
+      <option value="pp">100 Units</option>
+      <option value="pc">250 Units</option>
+	  <option value="pc">500 Units</option>
+	  <option value="pc">1000 Units</option>
+    </select>
+	
+
+    <label for="subject">Subject</label>
+    <textarea id="subject" name="subject" placeholder="Please input additional information e.g(Specifiying the type of PET,PP,PC Bottle you need) (Optional)..." style="height:200px"></textarea>
+
+    <input type="submit" value="Submit">
+
+  </form>
+</div>
+   
+   </section>
+   <aside>
+<button class="open-button" onclick="openForm()">Chat</button>
+
+<div class="chat-popup" id="myForm">
+  <form action="/action_page.php" class="form-container">
+    <h1><i>Feedback</i></h1>
+
+    <label for="msg"><b>Message</b></label>
+    <textarea placeholder="Type message.." name="msg" required></textarea>
+
+    <button type="submit" class="btn">Send</button>
+    <button type="button" class="btn cancel" onclick="closeForm()">Cancel</button>
+  </form>
+</div>
+</aside>
+<section>
+<div class="mapouter"><div class="gmap_canvas">
+				<iframe width="600" height="500" id="gmap_canvas"
+				src="https://maps.google.com/maps?q=wuse%202%20aptech%20nigeria&t=&z=13&ie=UTF8&iwloc=&output=embed" frameborder="0" 
+				scrolling="no" marginheight="0" marginwidth="0">
+				</iframe><a href="https://www.embedgooglemap.net"></a>
+				</div><style>.mapouter{text-align:right;height:500px;width:665px;}.gmap_canvas 
+				{overflow:hidden;background:none!important;height:500px;width:665px;}</style></div>
+</section>
+</body>
+<footer>
+	<h1 class="pet"><i>PetBot</i></h1>
+	<div id="jer">
+	<p class="mer" >
+	24,Aminu Kano Crescent,</p>
+	<p>
+	Wuse ll, Abuja.</p>
+	<p>
+	Email: petbotcompany@gmail.com</p>
+	<p>
+	<u>+2348104160507</u>.
+	</p>
+	</div>
+	<div id="jer2">
+	<p class="mer">
+	Contact using our email
+	</p>
+	<p class="mer">
+	Or
+	</p>
+	<p class="mer">
+	Go on Social Media
+	</p>
+	<p id="mes1">
+	follow us on
+	</p>
+	<p id="medc"> 
+	<a href="#" class="fa fa-facebook"></a>
+<a href="#" class="fa fa-twitter"></a>
+<a href="#" class="fa fa-google"></a>
+<a href="#" class="fa fa-linkedin"></a>
+<a href="#" class="fa fa-pinterest"></a>
+	</p>
+	</div>
+	<h5><i>PetBot Company <br>&copy 2018</i> </h5>
+	</footer>
+ <script>
+function openForm() {
+  document.getElementById("myForm").style.display = "block";
+}
+
+function closeForm() {
+  document.getElementById("myForm").style.display = "none";
+}
+</script>
+</html>
